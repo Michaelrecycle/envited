@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import landingImage from "../../assets/landing-image.svg"
 import classes from "./index.module.scss"
 
@@ -13,16 +14,18 @@ const Landing = () => {
                     <h1 className={classes.heading}>had events.</h1>
                 </div>
                 <p className={classes.description}>Easily host and share events with your friends across any social media.</p>
-                <div className={`${classes.catButton} ${classes.desktop}`}>
+                <Link to="/create" className={`${classes.catButton} ${classes.desktop}`}> <div >
                     <span>🎉 Create my event</span>
-                </div>
+                </div></Link>
             </div>
 
         </div>
         <div className={classes.landingImage}><img src={landingImage} alt="Overview of the app" /></div>
-        <div className={`${classes.catButton} ${classes.mobile}`}>
-            <span>🎉 Create my event</span>
-        </div>
+        <Link to="/create" className={`${classes.catButton} ${classes.mobile}`}>
+            <div >
+                <span>🎉 Create my event</span>
+            </div>
+        </Link>
     </div>);
 }
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import birthdayCake from "../../assets/birthday-cake.png"
 import InfoWidget from '../../components/InfoWidget';
-import classes from "./index.module.scss"
 import CalendarIcon from "../../assets/icons/calendar.svg"
 import locationIcon from "../../assets/icons/location.svg"
+import classes from "./index.module.scss"
 
 
 const Event = () => {
