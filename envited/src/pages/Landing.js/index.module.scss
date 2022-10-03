@@ -1,0 +1,156 @@
+.container {
+    background-color: var(--secondary-3);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.content {
+    width: 90%;
+    margin: auto;
+}
+.landingImage {
+    margin-top: 10%;
+    img {
+        width: 50%;
+    }
+}
+.headings {
+    margin-bottom: 16px;
+}
+.heading {
+    color: var(--primary);
+}
+.heading,
+.gradientHeading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    /* or 100% */
+    text-align: center;
+}
+.gradientHeading {
+    background: linear-gradient(90deg, var(--primary-2) 24.2%, var(--primary-3) 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--neutral);
+}
+.catButton {
+    margin-top: 10%;
+    background: linear-gradient(90deg, var(--primary-2) 3.25%, var(--primary-3) 100%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #ffffff;
+    }
+}
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 960px) {
+    .container {
+        justify-content: flex-start;
+        padding-top: 5%;
+    }
+    .content {
+        width: 70%;
+    }
+    .heading,
+    .gradientHeading {
+        font-size: 64px;
+        line-height: 74px;
+    }
+    .landingImage {
+        margin-top: 5%;
+        img {
+            width: 80%;
+        }
+    }
+    .description {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .catButton {
+        margin-top: 5%;
+        width: 30%;
+        span {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}
+@media only screen and (min-width: 1512px) {
+    .container {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    .content {
+        width: 100%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .headings {
+        text-align: right;
+        margin-bottom: 16px;
+    }
+
+    .heading,
+    .gradientHeading {
+        font-size: 64px;
+        line-height: 74px;
+        text-align: right;
+    }
+
+    .description {
+        font-size: 24px;
+        line-height: 28px;
+        width: 80%;
+        text-align: right;
+    }
+    .catButton {
+        width: 40%;
+        align-self: flex-end;
+        span {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+    .landingImage {
+        img {
+            width: 100%;
+        }
+    }
+}
